@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F7FAF7;
+  --foreground: #1f2937;
+  --brand-blue: #6B8F71;
+  --brand-cream: #F2F5F1;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand-blue);
+  --color-cream: var(--brand-cream);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0B1210;
+    --foreground: #e5e7eb;
+    --brand-blue: #4E6A56;
+    --brand-cream: #E8EEE5;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.reveal-visible {
+  opacity: 1;
+}
+
+.reveal.fade-up {
+  transform: translateY(16px);
+}
+
+.reveal.fade-up.reveal-visible {
+  transform: translateY(0);
+}
+
+.reveal.zoom-in {
+  transform: scale(0.96);
+}
+
+.reveal.zoom-in.reveal-visible {
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.fade-up,
+  .reveal.zoom-in,
+  .reveal.reveal-visible,
+  .reveal.fade-up.reveal-visible,
+  .reveal.zoom-in.reveal-visible {
+    transition: none;
+    transform: none;
+  }
+}

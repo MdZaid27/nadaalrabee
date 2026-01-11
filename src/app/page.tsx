@@ -27,16 +27,51 @@ export default function Home() {
   }, []);
   return (
     <main className="w-full font-sans">
-      <section className="w-full grid md:grid-cols-2 bg-brand text-white">
+      {/* Hero Section */}
+      <section className="w-full h-svh min-h-[500px] flex items-center justify-center bg-zinc-900 text-white relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+             src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80"
+             alt="Hero background"
+             fill
+             className="object-cover opacity-50"
+             priority
+          />
+        </div>
+        <div className="relative z-10 text-center px-4 reveal fade-up">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-wide max-w-4xl mx-auto leading-tight">
+            Traditions Frozen Fresh,<br />From Far East to West
+          </h1>
+        </div>
+      </section>
+
+      <section id="about" className="w-full grid md:grid-cols-2 bg-brand text-white">
         <div className="flex items-center justify-center px-8 md:px-16 py-20 md:py-28">
           <div className="max-w-xl reveal fade-up">
             <h2 className="text-3xl md:text-4xl tracking-wide">ABOUT US</h2>
-            <p className="mt-6 leading-7 text-zinc-200">
-              Nada al Rabee Foods provides fresh, frozen, and chilled food products,
-              food ingredients, and sauces. Our cost‑efficient solutions serve a wide
-              range of customers across the Middle East and international food and
-              beverage markets.
-            </p>
+            <div className="mt-6 space-y-4 leading-7 text-zinc-200">
+              <p>
+                Nada Al Rabee Frozen Food Industry LLC is a UAE-based frozen food
+                manufacturing company, established in 2017, specializing in
+                handcrafted frozen food solutions inspired by Eurasian, Eastern
+                European, Asian, Chinese, and Indian cuisines.
+              </p>
+              <p>
+                Operating from a HACCP-certified production facility, we focus on
+                producing high-quality frozen products using carefully selected raw
+                materials, controlled manufacturing processes, and strict hygiene
+                standards. Our product portfolio includes a wide range of handmade
+                artisan items such as dumplings, filled pastries, pancakes, meat
+                products, and specialty frozen foods.
+              </p>
+              <p>
+                We proudly serve HORECA clients, airline catering services, hospitality
+                groups, and retail partners across the UAE. Our operations are
+                supported by structured quality systems, trained manpower, and a
+                growing cold-chain distribution network, ensuring consistent product
+                safety, taste, and reliability.
+              </p>
+            </div>
             <a
               href="#services"
               className="mt-8 inline-block border border-white/40 px-6 py-3 text-sm tracking-wide"
@@ -58,8 +93,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="vision-mission" className="w-full px-8 md:px-16 py-20 bg-cream">
+         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+            <div className="reveal fade-up">
+              <h3 className="text-3xl text-zinc-900 mb-6">Our Vision</h3>
+              <p className="text-lg leading-relaxed text-zinc-700 italic">
+                To become a trusted frozen food manufacturing partner in the UAE and the region,
+                delivering safe, consistent, and culturally diverse frozen food solutions
+                across hospitality, catering, and retail sectors.
+              </p>
+            </div>
+            <div className="reveal fade-up">
+              <h3 className="text-3xl text-zinc-900 mb-6">Our Mission</h3>
+              <ul className="space-y-4 text-zinc-700 list-disc pl-5">
+                <li>
+                  To manufacture safe, high-quality frozen food products in compliance with
+                  UAE food safety regulations and HACCP standards.
+                </li>
+                <li>
+                  To deliver handcrafted artisan products with consistency and scalability.
+                </li>
+                <li>
+                  To support HORECA and catering partners with reliable supply, customization,
+                  and timely deliveries.
+                </li>
+                <li>
+                  To promote sustainable practices and responsible sourcing.
+                </li>
+                <li>
+                  To empower and develop a skilled workforce, with strong participation of
+                  women in food production.
+                </li>
+              </ul>
+            </div>
+         </div>
+      </section>
+
       <section id="horeca" className="w-full grid md:grid-cols-2 gap-0 bg-white">
-        <div>
+        <div className="h-64 md:h-full">
           <Image
             src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1600&q=80"
             alt="Horeca service"
@@ -69,7 +140,7 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
-        <div className="flex items-center px-8 md:px-16 py-20">
+        <div className="flex items-center px-8 md:px-16 py-14">
           <div className="max-w-xl reveal fade-up">
             <h3 className="text-3xl md:text-4xl text-zinc-900">Horeca</h3>
             <p className="mt-6 leading-7 text-zinc-700">
@@ -217,15 +288,11 @@ export default function Home() {
         </div>
         <div className="flex items-center px-8 md:px-16 py-20 bg-white">
           <div className="max-w-xl reveal fade-up">
-            <h3 className="text-3xl md:text-4xl text-zinc-900">Our Facility</h3>
+            <h3 className="text-3xl md:text-4xl text-zinc-900">How We Operate</h3>
             <p className="mt-6 leading-7 text-zinc-700">
-              The Nada al Rabee Foods factory in Dubai operates with HACCP and
-              codex standards, maintaining GMP practices and Halal compliance.
-              Our in‑house teams for Preventive Maintenance, Microbiology, and
-              Food Safety Compliance support partners with consistent excellence
-              in quality and service. Our facilities are designed for a diverse
-              range of products and flexible customization while ensuring
-              reliability at scale.
+              We operate through a HACCP-certified facility where handcrafted artisan
+              foods are produced with precision, care, and responsibility, following
+              strict food safety standards and sustainable practices at every stage.
             </p>
           </div>
         </div>

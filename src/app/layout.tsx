@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +32,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Sidebar />
         {children}
-        <footer className="mt-0 w-full bg-brand text-white">
+        <footer id="contact" className="mt-0 w-full bg-brand text-white">
           <div className="mx-auto max-w-6xl px-8 md:px-16 py-14 grid sm:grid-cols-3 gap-8">
             <div>
               <div className="text-2xl tracking-wide">Nada al Rabee Foods</div>
@@ -43,13 +45,18 @@ export default function RootLayout({
             <div>
               <div className="text-lg">Contact</div>
               <ul className="mt-3 space-y-2 text-zinc-200 text-sm">
-                <li><a href="mailto:info@nadaalrabeefoods.example">info@nadaalrabeefoods.com</a></li>
-                <li><a href="#">Discover On Map</a></li>
+                <li>Phone: <a href="tel:067673039" className="hover:text-white transition-colors">067673039</a></li>
+                <li>Mobile: <a href="tel:0562003579" className="hover:text-white transition-colors">0562003579</a></li>
+                <li>Email: <a href="mailto:info@nadaalrabeefoods.com" className="hover:text-white transition-colors">info@nadaalrabeefoods.com</a></li>
+                <li>Web: <a href="https://www.nadaalrabeefoods.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">www.nadaalrabeefoods.com</a></li>
               </ul>
             </div>
             <div>
               <div className="text-lg">Location</div>
-              <p className="mt-3 text-sm text-zinc-200">Dubai — United Arab Emirates</p>
+              <p className="mt-3 text-sm text-zinc-200">
+                Industrial Area 10, Warehouse 16<br />
+                PO:30145 Sharjah- UAE
+              </p>
             </div>
           </div>
           <div className="border-t border-white/20">

@@ -1,6 +1,26 @@
 "use client";
 import { useState, useEffect } from "react";
 
+function LinkItem({
+  href,
+  children,
+  onClick,
+}: {
+  href: string;
+  children: React.ReactNode;
+  onClick: () => void;
+}) {
+  return (
+    <a
+      href={href}
+      onClick={onClick}
+      className="block px-4 py-3 text-foreground hover:text-brand"
+    >
+      {children}
+    </a>
+  );
+}
+
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -12,21 +32,6 @@ export default function Sidebar() {
   }, []);
   const toggle = () => setOpen(o => !o);
   const close = () => setOpen(false);
-  const LinkItem = ({
-    href,
-    children,
-  }: {
-    href: string;
-    children: React.ReactNode;
-  }) => (
-    <a
-      href={href}
-      onClick={close}
-      className="block px-4 py-3 text-foreground hover:text-brand"
-    >
-      {children}
-    </a>
-  );
   return (
     <>
       <button
@@ -75,12 +80,24 @@ export default function Sidebar() {
           </button>
         </div>
         <div className="py-2">
-          <LinkItem href="#">Home</LinkItem>
-          <LinkItem href="#about">About Us</LinkItem>
-          <LinkItem href="#services">Our products</LinkItem>
-          <LinkItem href="#facility">How we operate</LinkItem>
-          <LinkItem href="#retail">Our Brands</LinkItem>
-          <LinkItem href="#contact">Contact Us</LinkItem>
+          <LinkItem href="#" onClick={close}>
+            Home
+          </LinkItem>
+          <LinkItem href="#about" onClick={close}>
+            About Us
+          </LinkItem>
+          <LinkItem href="#services" onClick={close}>
+            Our products
+          </LinkItem>
+          <LinkItem href="#facility" onClick={close}>
+            How we operate
+          </LinkItem>
+          <LinkItem href="#retail" onClick={close}>
+            Our Brands
+          </LinkItem>
+          <LinkItem href="#contact" onClick={close}>
+            Contact Us
+          </LinkItem>
         </div>
       </nav>
     </>

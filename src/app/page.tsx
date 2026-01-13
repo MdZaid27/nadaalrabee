@@ -31,7 +31,7 @@ export default function Home() {
       <section className="w-full h-svh min-h-[500px] flex items-center justify-center bg-zinc-900 text-white relative">
         <div className="absolute inset-0 z-0">
           <Image
-             src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80"
+             src="/hero%20image.jpg"
              alt="Hero background"
              fill
              className="object-cover opacity-50"
@@ -45,8 +45,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="w-full grid md:grid-cols-2 bg-brand text-white">
-        <div className="flex items-center justify-center px-8 md:px-16 py-20 md:py-28">
+      <section id="about" className="w-full grid md:grid-cols-2 items-stretch bg-brand text-white">
+        <div className="flex items-center justify-center px-6 md:px-10 py-10 md:py-12 h-full">
           <div className="max-w-xl reveal fade-up">
             <h2 className="text-3xl md:text-4xl tracking-wide">ABOUT US</h2>
             <div className="mt-6 space-y-4 leading-7 text-zinc-200">
@@ -80,13 +80,12 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="h-full">
+        <div className="relative h-full min-h-[320px]">
           <Image
-            src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?auto=format&fit=crop&w=1600&q=80"
+            src="/about%20us%20.jpeg"
             alt="Chef preparing food"
-            width={1600}
-            height={1067}
-            className="w-full h-full object-cover reveal zoom-in"
+            fill
+            className="object-cover reveal zoom-in"
             sizes="(max-width: 768px) 100vw, 50vw"
             priority
           />
@@ -130,27 +129,26 @@ export default function Home() {
       </section>
 
       <section id="horeca" className="w-full grid md:grid-cols-2 gap-0 bg-white">
-        <div className="h-64 md:h-full">
+        <div className="relative h-64 sm:h-80 md:h-[420px]">
           <Image
-            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1600&q=80"
+            src="/horcea.jpeg"
             alt="Horeca service"
-            width={1600}
-            height={1067}
-            className="w-full h-full object-cover reveal zoom-in"
+            fill
+            className="object-cover reveal zoom-in"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
-        <div className="flex items-center px-8 md:px-16 py-14">
+        <div className="flex items-center px-8 md:px-12 py-12">
           <div className="max-w-xl reveal fade-up">
             <h3 className="text-3xl md:text-4xl text-zinc-900">Horeca</h3>
-            <p className="mt-6 leading-7 text-zinc-700">
+            <p className="mt-4 leading-7 text-zinc-700">
               In UAE, Qatar, Maldives and Bahrain, we collaborate with Hotels,
               Restaurants and Airline catering businesses to deliver customized
               food solutions that cater to their unique needs. Our products are
               crafted to meet the diverse demands of our partners and exceed the
               expectations of discerning clientele.
             </p>
-            <div className="mt-8 grid grid-cols-3 sm:grid-cols-4 gap-4 text-zinc-600">
+            <div className="mt-6 grid grid-cols-3 sm:grid-cols-4 gap-3 text-zinc-600">
               <span>Accor</span>
               <span>Hilton</span>
               <span>Hyatt</span>

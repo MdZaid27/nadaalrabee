@@ -148,6 +148,9 @@ export default function Home() {
               crafted to meet the diverse demands of our partners and exceed the
               expectations of discerning clientele.
             </p>
+            <p className="mt-3 leading-7 text-zinc-700">
+              Our products are currently supplied to multiple star hotels, premium resorts, and established HORECA partners across the UAE.
+            </p>
             <div className="mt-6 grid grid-cols-3 sm:grid-cols-4 gap-3 text-zinc-600">
               <span>Accor</span>
               <span>Hilton</span>
@@ -163,30 +166,36 @@ export default function Home() {
       </section>
 
       <section id="retail" className="w-full grid md:grid-cols-2 bg-cream">
-        <div className="flex items-center justify-center px-8 md:px-16 py-20 md:py-28 bg-brand text-white">
+        <div className="flex items-center justify-center px-8 md:px-16 py-18 md:py-24 bg-brand text-white">
           <div className="max-w-xl reveal fade-up">
             <h3 className="text-3xl md:text-4xl">Retail</h3>
             <p className="mt-6 leading-7 text-zinc-200">
-              Our high‑quality food products are supplied to major retailers,
-              supermarkets and convenience stores throughout the Middle East. We
-              take pride in being a trusted partner, enabling access to a broad
-              consumer base and contributing to the growth of the regional food
-              market.
+              We serve the retail market through a multi-channel distribution model,
+              ensuring freshness, reliability, and wide accessibility for our products.
             </p>
-            <div className="mt-8 grid grid-cols-3 sm:grid-cols-4 gap-4 text-zinc-200">
-              <span>Spinneys</span>
-              <span>Géant</span>
-              <span>ZOOM</span>
-              <span>Waitrose</span>
-              <span>Union Coop</span>
-              <span>Carrefour</span>
-              <span>Lulu</span>
-            </div>
+            <p className="mt-4 leading-7 text-zinc-200">
+              Our frozen food range is available through:
+            </p>
+            <ul className="mt-4 space-y-3 text-zinc-200 list-disc pl-5">
+              <li>
+                Our dedicated online store, offering direct-to-consumer access with reliable home delivery
+              </li>
+              <li>
+                Selected supermarkets and retail outlets across Sharjah, Dubai, and Ajman
+              </li>
+              <li>
+                A dedicated temperature-controlled delivery fleet, ensuring product integrity from production to point of sale
+              </li>
+            </ul>
+            <p className="mt-6 leading-7 text-zinc-200">
+              By combining direct retail distribution with strong logistics capabilities, we ensure consistent supply,
+              proper cold-chain management, and a seamless experience for both retail partners and end consumers.
+            </p>
           </div>
         </div>
         <div>
           <Image
-            src="/retail-display.jpg"
+            src="/retail.jpeg"
             alt="Retail display"
             width={1600}
             height={1067}
@@ -196,26 +205,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="global" className="w-full grid md:grid-cols-2">
-        <div className="flex items-center justify-center p-10 md:p-16">
-          <img
-            src="/world-map.svg"
-            alt="Global map"
-            width={1600}
-            height={1000}
-            className="w-full max-w-4xl reveal zoom-in"
-            loading="lazy"
-          />
-        </div>
-        <div className="flex items-center px-8 md:px-16 py-20">
-          <div className="max-w-xl reveal fade-up">
-            <h3 className="text-3xl md:text-4xl text-zinc-900">Our Global Presence</h3>
-            <p className="mt-6 leading-7 text-zinc-700">
-              Our journey began in Dubai, UAE, and today we operate across the
-              region with branches in Qatar, Bahrain, the Maldives, India, Canada,
-              and the USA. We celebrate culinary diversity while maintaining
-              unwavering standards of quality and sustainability.
-            </p>
+      <section id="brands-products" className="w-full px-8 md:px-16 py-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-3xl md:text-4xl text-zinc-900">Our Brand & Products</h3>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            <a
+              href="https://mr-pellman.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 bg-cream border border-zinc-200 reveal fade-up block hover:border-brand transition-colors"
+            >
+              <div className="mx-auto h-[2px] w-10 bg-brand"></div>
+              <p className="mt-3 text-zinc-900">Mr Pellman</p>
+            </a>
+            <div className="p-6 bg-cream border border-zinc-200 reveal fade-up">
+              <div className="mx-auto h-[2px] w-10 bg-brand"></div>
+              <p className="mt-3 text-zinc-900">Chinese products</p>
+            </div>
+            <div className="p-6 bg-cream border border-zinc-200 reveal fade-up">
+              <div className="mx-auto h-[2px] w-10 bg-brand"></div>
+              <p className="mt-3 text-zinc-900">Indian products</p>
+            </div>
           </div>
         </div>
       </section>

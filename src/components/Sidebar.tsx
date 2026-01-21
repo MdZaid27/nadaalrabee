@@ -86,14 +86,11 @@ export default function Sidebar() {
           <LinkItem href="#about" onClick={close}>
             About Us
           </LinkItem>
-          <LinkItem href="#services" onClick={close}>
-            Our products
+          <LinkItem href="#brands-products" onClick={close}>
+            Our brand &amp; products
           </LinkItem>
           <LinkItem href="#facility" onClick={close}>
             How we operate
-          </LinkItem>
-          <LinkItem href="#retail" onClick={close}>
-            Our Brands
           </LinkItem>
           <LinkItem href="#contact" onClick={close}>
             Contact Us

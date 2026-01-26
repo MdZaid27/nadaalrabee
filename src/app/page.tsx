@@ -190,25 +190,8 @@ export default function Home() {
           <div className="max-w-xl reveal fade-up">
             <h3 className="text-3xl md:text-4xl text-zinc-900">Horeca</h3>
             <p className="mt-4 leading-7 text-zinc-700">
-              In UAE, Qatar, Maldives and Bahrain, we collaborate with Hotels,
-              Restaurants and Airline catering businesses to deliver customized
-              food solutions that cater to their unique needs. Our products are
-              crafted to meet the diverse demands of our partners and exceed the
-              expectations of discerning clientele.
-            </p>
-            <p className="mt-3 leading-7 text-zinc-700">
               Our products are currently supplied to multiple star hotels, premium resorts, and established HORECA partners across the UAE.
             </p>
-            <div className="mt-6 grid grid-cols-3 sm:grid-cols-4 gap-3 text-zinc-600">
-              <span>Accor</span>
-              <span>Hilton</span>
-              <span>Hyatt</span>
-              <span>Marriott</span>
-              <span>Emirates</span>
-              <span>IHG</span>
-              <span>Rixos</span>
-              <span>Jumeirah</span>
-            </div>
           </div>
         </div>
       </section>

@@ -31,7 +31,12 @@ export default function Home() {
       description:
         "Chinese cuisine range including dim sum and ready-to-cook items crafted for consistent quality and taste. Designed for retail and HORECA with consistent portioning and flavor profiles.",
       ctaLabel: "Click here",
-      images: ["/chi-1.webp", "/chi-2.jpeg", "/chi-3.png", "/chi-4.jpg"],
+      images: [
+        "/new%20chi%20-%201.jpeg",
+        "/new%20chi%20-%202.jpeg",
+        "/new%20chi%20-%203.jpeg",
+        "/new%20chi%20-%204.jpeg",
+      ],
     },
     {
       title: "Mr Pellman",
@@ -46,7 +51,7 @@ export default function Home() {
       description:
         "Indian favorites designed for retail and HORECA, focusing on balanced spices and dependable frozen formats. Ready-to-fry and bake items ideal for quick service.",
       ctaLabel: "Click here",
-      images: ["/Idly.jpg", "/momo.jpg", "/dosa.jpg", "/parotta.jpg"],
+      images: ["/Idly.jpg", "/momo.jpg", "/sam.jpeg", "/parotta.jpg"],
     },
   ], []);
   const [bpIndex, setBpIndex] = useState(1);
@@ -113,7 +118,7 @@ export default function Home() {
                 products, and specialty frozen foods.
               </p>
               <p>
-                We proudly serve HORECA clients, airline catering services, hospitality
+                We proudly serve HORECA clients, hospitality
                 groups, and retail partners across the UAE. Our operations are
                 supported by structured quality systems, trained manpower, and a
                 growing cold-chain distribution network, ensuring consistent product

@@ -266,7 +266,7 @@ export default function Home() {
                         src={brandItems[bpIndex].images[imgIndex]}
                         alt="Brand item"
                         fill
-                        unoptimized
+                        quality={70}
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, 1024px"
                       />

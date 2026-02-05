@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Nada al Rabee Foods",
   description:
     "Nada al Rabee Foods — quality food manufacturing and distribution across Horeca and Retail.",
+  icons: {
+    icon: "/Nada Al Rabee Logo.svg",
+  },
 };
 
 export default function RootLayout({
